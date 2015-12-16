@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="9060" systemVersion="15B42" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9051"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="bhP-R4-Ilr" customClass="XTChildCustomCell">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <subviews>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lo0-dF-kXb">
+                    <rect key="frame" x="20" y="0.0" width="335" height="21"/>
+                    <animations/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="21" id="GMk-2y-RJ9"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gss-1V-MYq">
+                    <rect key="frame" x="20" y="21" width="335" height="21"/>
+                    <animations/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="21" id="vPB-Nl-whn"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <animations/>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="gss-1V-MYq" firstAttribute="leading" secondItem="bhP-R4-Ilr" secondAttribute="leading" constant="20" id="HFv-uc-6A7"/>
+                <constraint firstAttribute="trailing" secondItem="gss-1V-MYq" secondAttribute="trailing" constant="20" id="RIG-3N-ZlC"/>
+                <constraint firstItem="lo0-dF-kXb" firstAttribute="top" secondItem="bhP-R4-Ilr" secondAttribute="top" id="bAc-Rd-Pog"/>
+                <constraint firstAttribute="trailing" secondItem="lo0-dF-kXb" secondAttribute="trailing" constant="20" id="bdq-e8-e1o"/>
+                <constraint firstItem="gss-1V-MYq" firstAttribute="top" secondItem="lo0-dF-kXb" secondAttribute="bottom" id="n9n-hL-R5J"/>
+                <constraint firstItem="lo0-dF-kXb" firstAttribute="leading" secondItem="bhP-R4-Ilr" secondAttribute="leading" constant="20" id="x1a-aW-nge"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="lbHeight" destination="gss-1V-MYq" id="HD3-8j-PUg"/>
+                <outlet property="lbTitle" destination="lo0-dF-kXb" id="4MB-Av-iME"/>
+            </connections>
+            <point key="canvasLocation" x="235" y="313"/>
+        </view>
+    </objects>
+</document>
